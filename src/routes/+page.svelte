@@ -5,82 +5,65 @@
 
 <section>
 	<div class="container">
-		<div class="work">ABOUT</div>
-		<div class="connect">CONNECT</div>
-		<div class="about">MY PROJECTS</div>
-		<div class="community">MY STACK</div>
+		<button class="about">ABOUT</button>
+		<button class="connect">CONNECT</button>
+		<button class="stack">MY STACK</button>
+		<button class="projects">MY PROJECTS</button>
 	</div>
 </section>
 
 <style>
-	html,
-	body {
-		margin: 0;
-		padding: 0;
-		height: 100%;
-		display: flex;
-		justify-content: center;
-		align-items: center;
-	}
-
 	.container {
 		display: grid;
-		grid-template-columns: 2fr 1fr;
-		grid-template-rows: 1fr 1fr;
-		gap: 10px; /* Adds spacing between the rectangles */
-		width: 70vw;
-		height: 70vh;
+		grid-template-areas:
+			'about about about connect'
+			'about about about connect'
+			'stack projects projects projects'
+			'stack projects projects projects';
+		gap: 0;
+		width: 100vw;
+		height: 100vh;
+		box-sizing: border-box;
 	}
 
-	.work {
-		grid-column: 1 / 2;
-		grid-row: 1 / 2;
+	.about,
+	.connect,
+	.projects,
+	.stack {
 		display: flex;
 		justify-content: center;
 		align-items: center;
-		border: 2px solid black;
+		border: 0.5px solid rgb(4, 49, 34);
 		font-size: 2em;
+		cursor: pointer;
+		background-color: rgb(231, 233, 206);
+		color: rgb(4, 49, 34);
+		transition:
+			background-color 0.35s ease,
+			color 0.35s ease;
 	}
 
-	.connect {
-		grid-column: 2 / 3;
-		grid-row: 1 / 2;
-		display: flex;
-		justify-content: center;
-		align-items: center;
-		border: 2px solid black;
-		font-size: 2em;
+	.about:hover,
+	.connect:hover,
+	.projects:hover,
+	.stack:hover {
+		background-color: rgb(4, 49, 34);
+		color: rgb(231, 233, 206);
 	}
 
 	.about {
-		grid-column: 1 / 2;
-		grid-row: 2 / 3;
-		display: flex;
-		justify-content: center;
-		align-items: center;
-		border: 2px solid black;
-		font-size: 2em;
+		grid-area: about;
 	}
 
-	.community {
-		grid-column: 2 / 3;
-		grid-row: 2 / 4;
-		display: flex;
-		justify-content: center;
-		align-items: center;
-		border: 2px solid black;
-		font-size: 2em;
+	.projects {
+		grid-area: projects;
 	}
 
-	.milli {
-		grid-column: 2 / 3;
-		grid-row: 2 / 3;
-		display: flex;
-		justify-content: center;
-		align-items: center;
-		border: 2px solid black;
-		background-color: #ffeb3b;
-		font-size: 2em;
-		font-weight: bold;
+	.stack {
+		grid-area: stack;
+	}
+
+	.connect {
+		grid-area: connect;
 	}
 </style>
