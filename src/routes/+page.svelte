@@ -33,11 +33,11 @@
 		display: flex;
 		justify-content: center;
 		align-items: center;
-		border: 0.5px solid rgb(4, 49, 34);
+		border: 0.5px solid var(--darkgreen);
 		font-size: 2em;
 		cursor: pointer;
-		background-color: rgb(231, 233, 206);
-		color: rgb(4, 49, 34);
+		background-color: var(--beige);
+		color: var(--darkgreen);
 		transition:
 			background-color 0.35s ease,
 			color 0.35s ease;
@@ -47,8 +47,8 @@
 	.connect:hover,
 	.projects:hover,
 	.stack:hover {
-		background-color: rgb(4, 49, 34);
-		color: rgb(231, 233, 206);
+		background-color: var(--darkgreen);
+		color: var(--beige);
 	}
 
 	.about {

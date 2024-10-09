@@ -1,20 +1,29 @@
 @import '@fontsource/fira-mono';
 
 :root {
-	--font-body: Arial, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu,
-		Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-	--font-mono: 'Fira Mono', monospace;
-	--color-bg-0: rgb(202, 216, 228);
-	--color-bg-1: hsl(209, 36%, 86%);
-	--color-bg-2: hsl(224, 44%, 95%);
-	--color-theme-1: #ff3e00;
-	--color-theme-2: #4075a6;
-	--color-text: rgba(0, 0, 0, 0.7);
-	--column-width: 42rem;
-	--column-margin-top: 4rem;
-	font-family: var(--font-body);
-	color: var(--color-text);
+	/* colors */
+	--black: #000501;
+	--white: #ffffff;
+	--beige: #e7e9ce;
+	--darkgreen: #043122;
+
+	/* font families */
+	--main: 'Lato', sans-serif;
+	--heading: 'Josefin Sans', sans-serif;
+	--mono: 'Fira mono', monospace;
+
+	/* type scale */
+	--base-size: 1.2rem;
+	--scale: 1.25;
+	--h1: calc(var(--h2) * var(--scale));
+	--h2: calc(var(--h3) * var(--scale));
+	--h3: calc(var(--h4) * var(--scale));
+	--h4: calc(var(--h5) * var(--scale));
+	--h5: calc(var(--h6) * var(--scale));
+	--h6: var(--base-size);
 }
+
+/* global styles for tags */
 
 html,
 body {
@@ -24,6 +33,36 @@ body {
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	font-family: var(--main);
+	line-height: 1.5;
+	font-size: var(--base-size);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-family: var(--heading);
+}
+h1 {
+	font-size: var(--h1);
+}
+h2 {
+	font-size: var(--h2);
+}
+h3 {
+	font-size: var(--h3);
+}
+h4 {
+	font-size: var(--h4);
+}
+h5 {
+	font-size: var(--h5);
+}
+h6 {
+	font-size: var(--h6);
 }
 
 input,
@@ -46,4 +85,28 @@ button:focus:not(:focus-visible) {
 	position: absolute;
 	width: 1px;
 	white-space: nowrap;
+}
+
+img {
+	max-width: 100%;
+}
+
+figure {
+	margin: 0;
+	padding: 0;
+}
+
+/* custom re-usable classes */
+
+/* fonts */
+.mono {
+	font-family: var(--mono);
+}
+
+/* background colors */
+.beige {
+	background-color: var(--beige);
+}
+.darkgreen {
+	background-color: var(--darkgreen);
 }
