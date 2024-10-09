@@ -91,6 +91,10 @@ img {
 	max-width: 100%;
 }
 
+a {
+	text-decoration: none;
+}
+
 figure {
 	margin: 0;
 	padding: 0;
