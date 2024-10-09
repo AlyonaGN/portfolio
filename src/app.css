@@ -4,7 +4,7 @@
 	/* colors */
 	--black: #000501;
 	--white: #ffffff;
-	--beige: #e7e9ce;
+	--beige: #f0f1e6;
 	--darkgreen: #043122;
 
 	/* font families */
@@ -21,6 +21,19 @@
 	--h4: calc(var(--h5) * var(--scale));
 	--h5: calc(var(--h6) * var(--scale));
 	--h6: var(--base-size);
+}
+
+/* Mobile viewports: set scale to 1 */
+@media (max-width: 600px) {
+	:root {
+		--base-size: 1.1rem;
+		--h6: var(--base-size);
+		--h5: var(--base-size);
+		--h4: var(--base-size);
+		--h3: var(--base-size);
+		--h2: var(--base-size);
+		--h1: var(--base-size);
+	}
 }
 
 /* global styles for tags */
