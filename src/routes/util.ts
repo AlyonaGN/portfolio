@@ -13,3 +13,6 @@ export const STACK_TITLE = 'stack';
 export const PROJECTS_TITLE = 'projects';
 
 export const TITLES = [ABOUT_TITLE, CONNECT_TITLE, STACK_TITLE, PROJECTS_TITLE];
+
+export const FULL_NAME = 'Alena Gnevusheva';
+export const ROLE = 'Frontend Engineer';

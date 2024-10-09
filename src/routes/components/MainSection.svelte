@@ -4,7 +4,7 @@
 
 <section>
 	<a href={`/${title}`}>
-		<h2>{title}</h2>
+		<h2>{title.toUpperCase()}</h2>
 	</a>
 </section>
 
@@ -13,7 +13,7 @@
 		display: flex;
 		justify-content: center;
 		align-items: center;
-		border: 0.5px solid var(--darkgreen);
+		box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 		font-size: 2em;
 		cursor: pointer;
 		background-color: var(--beige);

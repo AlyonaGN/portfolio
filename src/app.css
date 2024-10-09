@@ -14,7 +14,7 @@
 
 	/* type scale */
 	--base-size: 1.2rem;
-	--scale: 1.25;
+	--scale: 1.1;
 	--h1: calc(var(--h2) * var(--scale));
 	--h2: calc(var(--h3) * var(--scale));
 	--h3: calc(var(--h4) * var(--scale));
