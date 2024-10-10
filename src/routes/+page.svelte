@@ -1,6 +1,7 @@
 <script>
 	import GridElement from '$lib/components/layout/GridElement.svelte';
 	import GridLayout from '$lib/components/layout/GridLayout.svelte';
+	import Intro from './components/Intro.svelte';
 	import MainSection from './components/MainSection.svelte';
 	import { mainGridGap, mainGridTemplate, TITLES } from './util';
 </script>
@@ -17,3 +18,4 @@
 		</GridElement>
 	{/each}
 </GridLayout>
+<Intro />

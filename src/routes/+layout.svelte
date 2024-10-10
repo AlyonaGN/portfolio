@@ -1,11 +1,9 @@
 <script>
 	import '../app.css';
-	import Intro from './components/Intro.svelte';
 </script>
 
 <main>
 	<slot />
-	<Intro />
 </main>
 
 <style>
