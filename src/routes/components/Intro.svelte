@@ -1,5 +1,5 @@
 <script>
-	import { FULL_NAME, ROLE } from '../util';
+	import { FULL_NAME, ROLE } from '../utils';
 </script>
 
 <section>

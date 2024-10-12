@@ -3,7 +3,7 @@
 	import GridLayout from '$lib/components/layout/GridLayout.svelte';
 	import Intro from './components/Intro.svelte';
 	import MainSection from './components/MainSection.svelte';
-	import { mainGridGap, mainGridTemplate, TITLES } from './util';
+	import { mainGridGap, mainGridTemplate, TITLES } from './utils';
 </script>
 
 <svelte:head>
