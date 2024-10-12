@@ -1,6 +1,6 @@
 <script>
-	import picture from '$lib/images/Alena&Oxy.jpeg';
 	import { ABOUT_GREETING, ABOUT_INTERESTS, ABOUT_PERSONAL, ABOUT_PROFESSION } from './utils';
+	import picture from '$lib/images/Alena&Oxy.jpeg';
 </script>
 
 <section class="container">
