@@ -3,31 +3,27 @@
 	import picture from '$lib/images/Alena&Oxy.jpeg';
 </script>
 
-<section class="container">
+<section class="container beige">
+	<img src={picture} alt="Alena and her fog" />
 	<h1>{ABOUT_GREETING}</h1>
 	<p>{ABOUT_PROFESSION}</p>
 	<p>{ABOUT_PERSONAL}</p>
 	<p>{ABOUT_INTERESTS}</p>
-	<figure>
-		<img src={picture} alt="Alena and her fog" />
-		<figcaption>This is me and my dog Oxy</figcaption>
-	</figure>
 </section>
 
 <style>
-	figure {
-		margin: 0 auto;
-	}
-
 	img {
-		border-radius: 8px;
 		width: 300px;
+		float: right;
+		margin: 0 15px;
+		border-radius: 10px;
+		box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
 	}
 
 	.container {
 		max-width: 1200px;
 		min-width: 280px;
 		margin: 0 auto;
-		padding: 0 1rem;
+		padding: 30px;
 	}
 </style>

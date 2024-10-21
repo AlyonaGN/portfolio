@@ -1,4 +1,4 @@
-export const ABOUT_GREETING = "Hi, I'm Alena";
+export const ABOUT_GREETING = "Hi, I'm Alena!";
 
 export const ABOUT_PROFESSION = `I'm an experienced frontend engineer who loves crafting delightful UI experiences, supported by performant, well-architected code. 
     My work experience includes building and maintaining two MVPs from stratch as a solo frontend engineer at a startup, 

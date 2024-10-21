@@ -58,6 +58,7 @@ h4,
 h5,
 h6 {
 	font-family: var(--heading);
+	margin: 0;
 }
 h1 {
 	font-size: var(--h1);
@@ -76,6 +77,11 @@ h5 {
 }
 h6 {
 	font-size: var(--h6);
+}
+
+p {
+	font-size: 18px;
+	line-height: 1.8;
 }
 
 input,
