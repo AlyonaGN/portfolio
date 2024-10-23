@@ -1,29 +1,25 @@
 <script>
 	import { ABOUT_GREETING, ABOUT_INTERESTS, ABOUT_PERSONAL, ABOUT_PROFESSION } from './utils';
-	import picture from '$lib/images/Alena&Oxy.jpeg';
+	import mainPicture from '$lib/images/Alena&Oxy.jpeg';
+	import Image from '$lib/components/Image/Image.svelte';
+	import familyPic from '$lib/images/family.jpeg';
 </script>
 
 <section class="container beige">
-	<img src={picture} alt="Alena and her fog" />
+	<Image --float="right" src={mainPicture} alt="Alena and her fog" width="300px" />
 	<h1>{ABOUT_GREETING}</h1>
 	<p>{ABOUT_PROFESSION}</p>
+	<Image src={familyPic} alt="Alena's family" --float="left" width="300px" />
 	<p>{ABOUT_PERSONAL}</p>
 	<p>{ABOUT_INTERESTS}</p>
 </section>
 
 <style>
-	img {
-		width: 300px;
-		float: right;
-		margin: 0 15px;
-		border-radius: 10px;
-		box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
-	}
-
 	.container {
 		max-width: 1200px;
 		min-width: 280px;
 		margin: 0 auto;
 		padding: 30px;
+		display: flow-root;
 	}
 </style>

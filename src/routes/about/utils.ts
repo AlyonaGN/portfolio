@@ -12,3 +12,36 @@ Our dog may not code, but he makes an excellent pair programmer.`;
 export const ABOUT_INTERESTS = `In my free time, I enjoy staying active through resistance training, cardio, and mobility exercises. 
 I also love training my dog in nose work and teaching him funny tricks, as well as discovering new specialty coffee spots. 
 I practice mindfulness and meditation regularly — not for the spiritual aspect, but for the clarity it brings.`;
+
+export const picturesNames: Record<string, string> = {
+	tshirt: 'tshirt',
+	family: 'family',
+	oxyAlena: 'oxyAlena',
+	oxy: 'oxy'
+};
+
+export const PICTURES = [
+	{
+		caption: 'Sayana got acqiured by Headspace Health',
+		alt: 'Acqusition T-Shirt',
+		name: picturesNames.tshirt
+	},
+	{
+		caption: 'Family',
+		alt: 'Eugene, Alena and Oxy',
+		name: picturesNames.family
+	},
+	{
+		caption: 'Oxy & Alena',
+		alt: 'Oxy & Alena',
+		name: picturesNames.oxyAlena
+	},
+	{
+		caption: 'Oxy',
+		alt: 'Oxy',
+		name: picturesNames.oxy
+	}
+];
+
+export const picturesGridTemplate = `"${picturesNames.tshirt} ${picturesNames.oxyAlena} "
+    "${picturesNames.family} ${picturesNames.oxy}"`;
