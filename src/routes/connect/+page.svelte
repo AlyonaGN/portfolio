@@ -1,16 +1,36 @@
-<script>
+<script lang="ts">
 	import PageContainer from '../components/PageContainer.svelte';
-	import { CONTTACTS_TITLE } from './utils';
+	import { CONTACTS, CONTTACTS_TITLE } from './utils';
 </script>
 
 <PageContainer>
 	<h1>{CONTTACTS_TITLE}</h1>
 	<ul>
-		<li><a href="https://t.me/alyonaGN">Telegram</a></li>
-		<li>
-			<a href="https://mail.google.com/mail/?view=cm&fs=1&to=al.gnevusheva@gmail.com">Mail</a>
-		</li>
-		<li><a href="https://github.com/AlyonaGN">GitHub</a></li>
-		<li><a href="https://www.instagram.com/alyona_gnevusheva/">Instagram</a></li>
+		{#each CONTACTS as contact}
+			<li><a target="”_blank”" href={contact.link}>{contact.name}</a></li>
+		{/each}
 	</ul>
 </PageContainer>
+
+<style>
+	h1 {
+		text-align: center;
+	}
+
+	ul {
+		list-style-type: square;
+		padding: 0;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+
+	li {
+		margin: 10px 0;
+	}
+
+	a {
+		text-decoration: none;
+		color: var(--darkgreen);
+	}
+</style>

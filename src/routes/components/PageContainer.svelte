@@ -1,4 +1,4 @@
-<section class="container">
+<section class="container beige">
 	<slot />
 </section>
 
@@ -8,5 +8,6 @@
 		margin: 0 auto;
 		padding: 30px;
 		display: flow-root;
+		height: 100vh;
 	}
 </style>
