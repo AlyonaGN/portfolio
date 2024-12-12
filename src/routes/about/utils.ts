@@ -3,7 +3,7 @@ export const ABOUT_GREETING = "Hi, I'm Alena!";
 export const ABOUT_PROFESSION = `I'm an experienced frontend engineer who loves crafting delightful UI experiences, supported by performant, well-architected code. 
     My work experience includes building and maintaining two MVPs from stratch as a solo frontend engineer at a startup, 
     as well as contributing to a large-scale project as part of a cross-functional team at Headspace Health.
-    During my time at Headspace Health, I have designed and implemented the chat and inbox features, smart replies feature powered by our ML model, and led the state management refactoring`;
+    During my time at Headspace Health, I have designed and implemented the chat and inbox features, smart replies feature powered by our ML model, and led the state management refactoring.`;
 
 export const ABOUT_PERSONAL = `I live in Haarlem, the Netherlands, with my husband and our dachshund. 
 My husband is a backend engineer, so we like to call ourselves a full-stack family. 
